@@ -42,7 +42,7 @@ function updateContent() {
 	document.querySelector('.about-text').innerHTML = i18next.t('about-text');
 	document.querySelector('.projects-heading').innerHTML = i18next.t('projects-heading');
 	// document.querySelector('.projects-subheading').innerHTML = i18next.t('projects-subheading');
-	document.querySelector('.contact-text').innerHTML = i18next.t('contact-text');
+	// document.querySelector('.contact-text').innerHTML = i18next.t('contact-text');
 }
 
 const changeLang = lang => {

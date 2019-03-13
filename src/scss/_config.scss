@@ -10,6 +10,20 @@ $background-opacity: 0.9;
 	transition: all 0.5s ease-out;
 }
 
+@mixin sectionHeading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.projects-heading {
+		font-size: 2rem;
+		padding: 1rem 2rem;
+		border-radius: 10px;
+		background: $color-fourth;
+		color: $color-primary;
+	}
+}
+
 @function set-color($color) {
 	@if (lightness($color) > 40) {
 		@return $color-primary;

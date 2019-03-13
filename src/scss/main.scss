@@ -88,22 +88,13 @@ h2 {
 	&2 {
 		background-image: url("../images/code_photo.jpeg");
 		min-height: 300px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.projects-heading {
-			font-size: 2rem;
-			padding: 1rem 2rem;
-			border-radius: 10px;
-			background: $color-fourth;
-			color: $color-primary;
-		}
+		@include sectionHeading;
 	}
 
 	&3 {
-		background-image: url("../images/mountain.jpeg");
+		background-image: url("../images/keyboard.jpeg");
 		min-height: 400px;
+		@include sectionHeading;
 	}
 }
 
@@ -114,12 +105,6 @@ main {
 		&.about {
 			max-width: 600px;
 			margin: 4rem auto;
-
-			.heading {
-			}
-
-			.text {
-			}
 		}
 
 		&#projects {
