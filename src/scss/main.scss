@@ -114,33 +114,55 @@ main {
 
 			.project {
 				border: 1px solid $color-secondary;
+				text-align: center;
 				width: 700px;
 				margin: 2rem;
 				display: grid;
+				grid-gap: 1rem;
 				padding: 1rem;
 				border-radius: 10px;
 				background: lighten($color-fourth, 5);
 				// prettier-ignore
 				grid-template-areas: "img heading"
 									 "img text"
-									 "img text";
+									 "img btn1"
+									 "img btn2";
 
 				&-heading {
 					grid-area: heading;
 				}
-			}
 
-			.image1 {
-				background: url("../images/recipe\ app\ image.JPG");
-				grid-area: img;
-			}
-			.image2 {
-				background: url("../images/fitapp\ image.JPG");
-				grid-area: img;
-			}
-			.image3 {
-				background: url("../images/placesapp\ image.JPG");
-				grid-area: img;
+				.img {
+					width: 300px;
+					grid-area: img;
+				}
+
+				&-text {
+					grid-area: text;
+				}
+
+				a {
+					text-decoration: none;
+					color: $color-fourth;
+					background: $color-secondary;
+					border: 1px solid $color-secondary;
+					border-radius: 10px;
+					padding: 0.5rem;
+					cursor: pointer;
+				}
+
+				a:hover {
+					color: $color-secondary;
+					background: $color-fourth;
+				}
+
+				&-button {
+					grid-area: btn1;
+				}
+
+				&-button-git {
+					grid-area: btn2;
+				}
 			}
 
 			.project-description {
