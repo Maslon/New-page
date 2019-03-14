@@ -139,6 +139,7 @@ main {
 
 				&-text {
 					grid-area: text;
+					width: 350px;
 				}
 
 				a {
@@ -211,10 +212,10 @@ main {
 				font-size: 1.5rem;
 				margin: 0.5rem;
 				text-decoration: none;
-				color: set-color($color-fourth);
+				color: $color-secondary;
 
 				&:hover {
-					color: $color-secondary;
+					color: $color-third;
 					letter-spacing: 0.05rem;
 					@include transition;
 				}
@@ -223,26 +224,28 @@ main {
 	}
 }
 
-.footer {
-	background: $color-primary;
-}
-
 .icons {
 	padding: 2rem;
-	text-align: center;
+	margin-left: auto;
 
 	a {
 		padding: 0.6rem;
+		color: $color-secondary;
 
 		&:hover {
-			color: $color-secondary;
+			color: $color-third;
 			@include transition();
 		}
 	}
 }
 
+.footer {
+	background: $color-primary;
+}
+
 .copyright {
 	padding: 2rem;
+	color: $color-fourth;
 }
 
 @import "mobile";

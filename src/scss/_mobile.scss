@@ -44,8 +44,18 @@
 			}
 
 			&#projects {
-				.projects-container {
-					grid-template-columns: 1fr;
+				.project {
+					margin: 2rem;
+					width: 400px;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					a {
+						width: 200px;
+						margin-top: 1rem;
+					}
 				}
 			}
 
