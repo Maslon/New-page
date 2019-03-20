@@ -7,14 +7,16 @@
 	z-index: 5;
 
 	&:hover > .menu-line {
-		background-color: $color-third;
+		background-color: $color-secondary;
 	}
 
 	.menu-line {
 		width: 28px;
 		height: 4px;
-		background: $color-secondary;
+		background: white;
+		mix-blend-mode: difference;
 		margin-bottom: 5px;
+		border: 0.5px solid rgb(95, 95, 95);
 		border-radius: 5px;
 		@include transition;
 	}
