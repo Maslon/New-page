@@ -55,7 +55,6 @@ function updateContent() {
 	document.querySelector('.text2').innerHTML = i18next.t('text2');
 	document.querySelector('.text3').innerHTML = i18next.t('text3');
 	document.querySelector('.text4').innerHTML = i18next.t('text4');
-	// document.querySelector('.projects-subheading').innerHTML = i18next.t('projects-subheading');
 	document.querySelector('.contact-text').innerHTML = i18next.t('contact-text');
 }
 
