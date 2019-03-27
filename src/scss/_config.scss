@@ -15,11 +15,12 @@ $background-opacity: 0.9;
 	justify-content: center;
 	align-items: center;
 
-	.projects-heading {
+	.projects-heading,
+	.contact-text {
 		font-size: 2rem;
 		padding: 1rem 2rem;
-		border-radius: 10px;
-		background: $color-fourth;
+		// border-radius: 10px;
+		background: rgb(172, 171, 171);
 		color: $color-primary;
 	}
 }
